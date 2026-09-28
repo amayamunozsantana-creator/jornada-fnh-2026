@@ -1,0 +1,112 @@
+{
+  "$descripcion": "Tokens de diseño del sitio de la 4ª Jornada FNH, extraídos del prototipo v4. Formato compatible con Tokens Studio / Figma Variables (W3C Design Tokens).",
+  "color": {
+    "purple-deep": {
+      "$value": "#5B3E82",
+      "$type": "color"
+    },
+    "purple": {
+      "$value": "#7666A3",
+      "$type": "color"
+    },
+    "lavender": {
+      "$value": "#F4F1F8",
+      "$type": "color"
+    },
+    "amber": {
+      "$value": "#E2AB3B",
+      "$type": "color"
+    },
+    "ink": {
+      "$value": "#231A33",
+      "$type": "color"
+    },
+    "ink2": {
+      "$value": "#1C1428",
+      "$type": "color"
+    },
+    "texto-secundario": {
+      "$value": "#4A4056",
+      "$type": "color"
+    },
+    "texto-terciario": {
+      "$value": "#6B6178",
+      "$type": "color"
+    },
+    "texto-apagado": {
+      "$value": "#8A7FA0",
+      "$type": "color"
+    },
+    "borde-suave": {
+      "$value": "#EEEAF4",
+      "$type": "color"
+    },
+    "lavanda-texto-oscuro": {
+      "$value": "#B8ADCB",
+      "$type": "color"
+    },
+    "sobre-ambar": {
+      "$value": "#2B2110",
+      "$type": "color"
+    }
+  },
+  "tipografia": {
+    "familia": {
+      "$value": "Montserrat, sans-serif",
+      "$type": "fontFamily"
+    },
+    "pesos": {
+      "medio": 500,
+      "seminegrita": 600,
+      "negrita": 700,
+      "extra": 800,
+      "black": 900
+    },
+    "escala": {
+      "h1-hero": "clamp(34px,5vw,58px) / 900 / 1.05",
+      "h2": "clamp(26px,3.4vw,34px) / 900",
+      "antetitulo": "12px / 800 / tracking .1em / mayúsculas",
+      "cuerpo-destacado": "17px / 500 / 1.8",
+      "cuerpo": "14–16px / 500 / 1.6–1.7",
+      "nota": "12px / 600",
+      "numero-cuenta-regresiva": "clamp(56px,10vw,150px) / 900",
+      "numero-modulo": "clamp(46px,8vw,96px) / 900 / contorno 2px"
+    }
+  },
+  "espaciado": {
+    "seccion-vertical": "90px",
+    "seccion-lateral": "5vw",
+    "hero-padding": "6vw",
+    "gap-grilla": "24px"
+  },
+  "radio": {
+    "boton": "30px",
+    "tarjeta-grande": "20px",
+    "tarjeta": "16px",
+    "banda": "14px",
+    "pildora": "20px",
+    "foto-persona-circular": "50%"
+  },
+  "sombra": {
+    "boton": "0 4px 14px rgba(226,171,59,.35)",
+    "boton-hover": "0 10px 22px rgba(226,171,59,.5)"
+  },
+  "puntos-de-quiebre": {
+    "movil": "860px",
+    "tabla-valores-compacta": "640px"
+  },
+  "movimiento": {
+    "boton-hover": "transform .18s cubic-bezier(.34,1.56,.64,1)",
+    "subrayado": "transform .3s ease",
+    "menu-lateral": "transform .45s cubic-bezier(.77,0,.18,1)",
+    "acordeon": "max-height .35s ease",
+    "galeria-hover": "filter .3s, transform .4s",
+    "parallax-velocidades": {
+      "textura": 0.18,
+      "circulo-grande": 0.4,
+      "circulo-ambar": 0.6,
+      "numero-fondo": -0.1
+    },
+    "reducir-movimiento": "todo se desactiva con prefers-reduced-motion"
+  }
+}

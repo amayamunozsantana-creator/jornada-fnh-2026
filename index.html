@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="4ª Jornada de Cáncer Infantojuvenil de Fundación Nuestros Hijos. Lunes 30 de noviembre de 2026, Auditorio COPEC, Santiago. Presencial y online.">
+<!-- Quitar la línea siguiente cuando el sitio sea el oficial, para que Google lo indexe -->
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<title>4ª Jornada de Cáncer Infantojuvenil</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<img id="cursor" src="img/cursor_monitos_FNH.png" alt="">
+
+<!-- NAV -->
+<div class="nav">
+  <img src="img/logo_4a_Jornada_header.png" alt="Fundación Nuestros Hijos — 4ª Edición Jornada de Cáncer Infantojuvenil" style="height:42px;width:auto;">
+  <div class="nav-links">
+    <a class="btn-underline" href="#programa">Programa</a>
+    <a class="btn-underline" href="#conferencistas">Expositores</a>
+    <a class="btn-underline" href="#info-practica">Info práctica</a>
+    <a class="btn-underline" href="#sumarse">Sumarte</a>
+    <a class="btn-pop" href="#valores">Compra tu entrada</a>
+    <button class="hamburger" id="openMenu" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<nav class="offcanvas" id="offcanvas">
+  <button class="close-x" id="closeMenu" aria-label="Cerrar menú">✕</button>
+  <a href="#quien-es">Para quién es</a>
+  <a href="#programa">Programa</a>
+  <a href="#conferencistas">Conferencistas</a>
+  <a href="#comite">Comité Científico</a>
+  <a href="#valores">Valores</a>
+  <a href="#info-practica">Información práctica</a>
+  <a href="#resultados">Resultados</a>
+  <a href="#patrocinios">Patrocinios</a>
+  <a href="#auspicios">Auspicios</a>
+  <a href="#sumarse">Sumarte a la Jornada</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="plx" data-speed="0.18"><img class="plx-texture" src="img/textura_celulas_hero.png" alt=""></div>
+  <div class="plx" data-speed="0.4"><div class="plx-circle" style="width:420px;height:420px;right:-8vw;top:-10vh;"></div></div>
+  <div class="plx" data-speed="0.6"><div class="plx-circle" style="width:220px;height:220px;left:2vw;bottom:-6vh;background:rgba(226,171,59,.15);"></div></div>
+  <div class="hero-content">
+    <div class="badge">4ª EDICIÓN</div>
+    <h1>Jornada de Cáncer<br>Infantojuvenil</h1>
+    <p>Fundación Nuestros Hijos reúne a especialistas de Chile y el mundo para revisar los avances en política pública, tratamiento, investigación y calidad de vida en oncología infantojuvenil.</p>
+    <div class="fact-row">
+      <div class="fact"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="3" width="14" height="13" rx="2" stroke="#fff" stroke-width="1.5"/><path d="M2 7h14M6 1.5v3M12 1.5v3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>Lunes 30 de noviembre, 2026</div>
+      <div class="fact"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#fff" stroke-width="1.5"/><path d="M9 5v4l3 2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>08:30 – 18:00 hrs</div>
+      <div class="pill-soft">Presencial y Online</div>
+    </div>
+    <div class="fact" style="margin-bottom:32px;"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 16s6-5.2 6-9.5A6 6 0 003 6.5C3 10.8 9 16 9 16z" stroke="#fff" stroke-width="1.5"/><circle cx="9" cy="6.5" r="2" stroke="#fff" stroke-width="1.5"/></svg>Auditorio COPEC — Isidora Goyenechea 2915, Las Condes</div>
+    <a href="#valores" class="btn-pop">Compra tu entrada
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="#2B2110" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- COUNTDOWN -->
+<div class="countdown">
+  <div class="ghost-num plx" data-speed="-0.1" id="cd-ghost">18</div>
+  <div class="cd-eyebrow"><div class="cd-dot"></div><div id="cd-title" style="font-size:13px;font-weight:800;letter-spacing:.1em;color:var(--amber);">LA PREVENTA CIERRA EL DOMINGO 18 DE OCTUBRE, 23:59 (HORA DE CHILE)</div></div>
+  <div class="cd-nums">
+    <div class="cd-block"><div class="n" id="cd-days">28</div><div class="l">DÍAS</div></div>
+    <div class="cd-colon">:</div>
+    <div class="cd-block"><div class="n" id="cd-hours">00</div><div class="l">HORAS</div></div>
+    <div class="cd-colon">:</div>
+    <div class="cd-block"><div class="n" id="cd-mins">00</div><div class="l">MINUTOS</div></div>
+    <div style="align-self:center;margin-left:30px;max-width:220px;">
+      <div id="cd-note" style="font-size:14px;color:#B8ADCB;line-height:1.6;">Desde el lunes 19 de octubre rige la <strong style="color:#fff;">tarifa regular</strong>.</div>
+      <a href="#valores" class="btn-underline" style="color:var(--amber);display:inline-block;margin-top:12px;">Ver tarifas vigentes →</a>
+    </div>
+  </div>
+</div>
+
+<!-- PARA QUIÉN ES -->
+<section id="quien-es" class="bg-lavender">
+  <div class="eyebrow" style="margin-bottom:20px;">QUIÉN ASISTE</div>
+  <p style="font-size:17px;line-height:1.8;color:#4A4056;max-width:760px;margin:0;">Médicos, profesionales de rehabilitación, equipos psicosociales, investigadores, gestores e industria: todas las personas que hacen posible el tratamiento integral del cáncer infantoadolescente.</p>
+</section>
+
+<!-- BIENVENIDA -->
+<section style="max-width:900px;">
+  <div class="eyebrow">BIENVENIDA</div>
+  <p style="font-size:17px;line-height:1.8;font-weight:500;color:#3A2E52;text-align:justify;margin:0 0 16px;">Les damos la bienvenida a la 4ª Jornada de Cáncer Infantojuvenil de Fundación Nuestros Hijos, que se realizará el lunes 30 de noviembre de 2026 en el Auditorio COPEC, con transmisión en línea.</p>
+  <p style="font-size:17px;line-height:1.8;font-weight:500;color:#4A4056;text-align:justify;margin:0 0 16px;">El programa de este año propone revisar en qué punto se encuentra el cáncer infantojuvenil en Chile y en la región. Para ello recorrerá la hoja de ruta nacional y regional, los avances en el acceso al diagnóstico de precisión y a las terapias innovadoras, y la evidencia que hoy produce América Latina. La jornada concluye con la vida después del cáncer y con los desafíos que los niños, niñas y adolescentes enfrentan junto a sus familias una vez terminado el tratamiento. Contaremos con la participación de especialistas nacionales e internacionales.</p>
+  <p style="font-size:17px;line-height:1.8;font-weight:500;color:#4A4056;margin:0 0 16px;">Les invitamos a participar.</p>
+  <div style="font-size:13px;font-weight:800;color:var(--purple);">Dra. Marcela Zubieta · Presidenta y Fundadora de Fundación Nuestros Hijos</div>
+</section>
+
+<!-- COMITÉ -->
+<section id="comite" class="bg-lavender">
+  <div class="eyebrow">COMITÉ CIENTÍFICO</div>
+  <h2>Comité Científico</h2>
+  <div class="comite-equal-grid">
+    <div class="comite-card">
+      <img alt="Dra. Marcela Zubieta" class="comite-photo" src="img/foto_Zubieta_Marcela.jpg" style="object-fit:cover;">
+      <div class="comite-name">Dra. Marcela Zubieta</div>
+      <div class="comite-role">Presidenta y Fundadora de Fundación Nuestros Hijos</div>
+    </div>
+    <div class="comite-card">
+      <img alt="Dra. Orietta Candia" class="comite-photo" src="img/foto_Candia_Orietta.jpg" style="object-fit:cover;">
+      <div class="comite-name">Dra. Orietta Candia</div>
+      <div class="comite-role">Gerente Técnico de Fundación Nuestros Hijos</div>
+    </div>
+    <div class="comite-card">
+      <img alt="Dra. Julia Palma" class="comite-photo" src="img/foto_Palma_Julia.jpg" style="object-fit:cover;">
+      <div class="comite-name">Dra. Julia Palma</div>
+      <div class="comite-role">Médico Consultor, Programa Regional América del Sur — St. Jude Children's Research Hospital</div>
+    </div>
+    <div class="comite-card">
+      <div class="comite-photo"></div>
+      <div class="comite-name">Dra. Milena Villarroel</div>
+      <div class="comite-role">Presidenta SLAOP · Académica, Facultad de Medicina, Universidad de Chile</div>
+    </div>
+    <div class="comite-card">
+      <div class="comite-photo"></div>
+      <div class="comite-name">EU. Amaya Muñoz</div>
+      <div class="comite-role">Coordinadora de Extensión y Vinculación con el Medio de Fundación Nuestros Hijos</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMA -->
+<section id="programa">
+  <div class="eyebrow">PROGRAMA</div>
+  <h2>Lunes 30 de noviembre, 2026</h2>
+
+  <div class="tz-bar">
+    <span style="font-weight:800;font-size:13px;">Horario del día:</span>
+    <span id="tz-range" style="font-weight:900;font-size:15px;color:var(--purple-deep);">08:30 – 18:00</span>
+    <select class="tz-select" id="tz-select"></select>
+    <span class="tz-note" id="tz-note"></span>
+    <span class="tz-cl" id="tz-cl-ref"></span>
+  </div>
+
+  <div class="mod-pause"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 8h9v3a3 3 0 01-3 3H6a3 3 0 01-3-3V8z" stroke="#8A7FA0" stroke-width="1.4"/></svg>08:30 – 09:00 · Inscripciones</div>
+  <div class="mod-pause"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#8A7FA0" stroke-width="1.4"/></svg>09:00 – 09:15 · Apertura y bienvenida</div>
+
+  <div class="mod-row" data-mod="1">
+    <button class="mod-btn">
+      <div class="mod-num">01</div>
+      <div style="flex:1;"><div class="mod-title">Hoja de Ruta en Políticas Públicas</div><div class="mod-desc">Alianzas globales y oportunidades para el cáncer infantojuvenil en la Región.</div></div>
+      <div class="mod-tag">MÓDULO 1</div>
+      <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="#7666A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mod-detail">
+      <div style="padding-bottom:36px;">
+        <div class="sched-item"><div class="sched-time">09:15 – 09:30</div><div><div class="sched-title">CureAll Americas 2026: la hoja de ruta continental y el lugar de Chile en la subregión andina</div><div class="sched-who">Dra. Liliana Vásquez — Oficial Técnico, Iniciativa Global para el Cáncer Infantil, OPS/OMS · online</div></div></div>
+        <div class="sched-item"><div class="sched-time">09:30 – 10:00</div><div><div class="sched-title">Alianza Global de St. Jude: planificación estratégica y oportunidades para la región</div><div class="sched-who">Dra. Julia Palma — Médico Consultor, Programa Regional América del Sur, St. Jude Children's Research Hospital</div></div></div>
+        <div class="sched-item"><div class="sched-time">10:00 – 10:25</div><div><div class="sched-title">Cáncer infantojuvenil en Chile: construyendo respuestas a los avances del Plan Nacional de Cáncer Infantojuvenil</div><div class="sched-who sched-pending">Expositor — por confirmar</div></div></div>
+        <div class="sched-item"><div class="sched-time">10:25 – 10:55</div><div><div class="sched-title">Panel: "Deudas pendientes en cáncer infantojuvenil: cómo avanzar hacia mayor cobertura y equidad para NNA en Chile"</div><div class="sched-who">Modera: Dra. Milena Villarroel — Presidenta SLAOP</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mod-pause"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 8h9v3a3 3 0 01-3 3H6a3 3 0 01-3-3V8z" stroke="#8A7FA0" stroke-width="1.4"/><path d="M12 9h1.5a1.5 1.5 0 010 3H12" stroke="#8A7FA0" stroke-width="1.4"/></svg>10:55 – 11:25 · Coffee break</div>
+
+  <div class="mod-row alt" data-mod="2">
+    <button class="mod-btn">
+      <div class="mod-num">02</div>
+      <div style="flex:1;"><div class="mod-title">El Reto de Curar Más y Mejor</div><div class="mod-desc">Diagnóstico de precisión, acceso y regulación de terapias innovadoras.</div></div>
+      <div class="mod-tag">MÓDULO 2</div>
+      <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="#7666A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mod-detail">
+      <div style="padding-bottom:36px;">
+        <div class="sched-item"><div class="sched-time">11:25 – 11:45</div><div><div class="sched-title">Diagnóstico molecular en cáncer infantojuvenil: hacia dónde va la región y dónde estamos en Chile</div><div class="sched-who">Dra. Julia Palma — St. Jude Children's Research Hospital</div></div></div>
+        <div class="sched-item"><div class="sched-time">11:45 – 12:05</div><div><div class="sched-title">De la evaluación al acceso: trabajo colaborativo con la CDAC para acercar terapias innovadoras a NNA con cáncer</div><div class="sched-who">Dr. Felipe Espinoza — Coordinador Nacional Comité Asesor de Cáncer Infantil (PINDA), Jefe Unidad de Hemato-Oncología Infantil, Hospital San Borja Arriarán</div></div></div>
+        <div class="sched-item"><div class="sched-time">12:05 – 12:25</div><div><div class="sched-title">CAR-T Cell: modelos de manufactura y regulación en el mundo</div><div class="sched-who sched-pending">Expositor — por confirmar</div></div></div>
+        <div class="sched-item"><div class="sched-time">12:25 – 12:45</div><div><div class="sched-title">Escenario e importancia de la regulación de terapias innovadoras en Chile</div><div class="sched-who">Mg. Abog. Manuel Pérez — socio fundador y consultor, Portia Abogados</div></div></div>
+        <div class="sched-item"><div class="sched-time">12:45 – 13:05</div><div><div class="sched-title">Panel: "Del hallazgo molecular al acceso efectivo: qué falta para que la innovación llegue a niños, niñas y adolescentes con cáncer en Chile"</div><div class="sched-who">Modera: Dra. Julia Palma</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mod-pause"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#8A7FA0" stroke-width="1.4"/></svg>13:05 – 14:05 · Almuerzo <span style="font-style:italic;">(Meet the Expert para auspiciador Diamante)</span></div>
+
+  <div class="mod-row" data-mod="3">
+    <button class="mod-btn">
+      <div class="mod-num">03</div>
+      <div style="flex:1;"><div class="mod-title">Evidencia que Transforma</div><div class="mod-desc">Qué investiga América Latina en cáncer infantojuvenil.</div></div>
+      <div class="mod-tag">MÓDULO 3</div>
+      <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="#7666A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mod-detail">
+      <div style="padding-bottom:36px;">
+        <div class="sched-item"><div class="sched-time">14:05 – 14:30</div><div><div class="sched-title">Mapeo CCI LATAM: el rol de las Organizaciones de la Sociedad Civil en la atención del cáncer infantil en América Latina</div><div class="sched-who">Dra. Marcela Zubieta — Médico Infectólogo Pediátrico, Presidenta y Fundadora de Fundación Nuestros Hijos</div></div></div>
+        <div class="sched-item"><div class="sched-time">14:30 – 14:55</div><div><div class="sched-title">Caracterización de niños con tumores del SNC en rehabilitación: una serie de casos</div><div class="sched-who">Fgo-MsP. Pablo Vásquez — Jefe de Salud Integral, Fundación Nuestros Hijos</div></div></div>
+        <div class="sched-item"><div class="sched-time">14:55 – 15:20</div><div><div class="sched-title">Dando voz a los hermanos sanos de niños y jóvenes con cáncer</div><div class="sched-who">Lic-Mg. Ivonne Vargas — Académica e Investigadora, Centro de Bioética, Facultad de Medicina, Pontificia Universidad Católica de Chile</div></div></div>
+        <div class="sched-item"><div class="sched-time">15:20 – 15:45</div><div><div class="sched-title">Estudios clínicos en América Latina: qué se investiga, qué se publica y qué queda sin responder</div><div class="sched-who">Dra. Milena Villarroel — Presidenta SLAOP, Académica Facultad de Medicina, Universidad de Chile</div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mod-pause"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 8h9v3a3 3 0 01-3 3H6a3 3 0 01-3-3V8z" stroke="#8A7FA0" stroke-width="1.4"/><path d="M12 9h1.5a1.5 1.5 0 010 3H12" stroke="#8A7FA0" stroke-width="1.4"/></svg>15:45 – 16:05 · Coffee break corto</div>
+
+  <div class="mod-row alt" data-mod="4" style="border-bottom:1px solid #EEEAF4;">
+    <button class="mod-btn">
+      <div class="mod-num">04</div>
+      <div style="flex:1;"><div class="mod-title">Vivir con y Después del Cáncer</div><div class="mod-desc">Preservar el futuro, recuperar la funcionalidad y volver a la vida.</div></div>
+      <div class="mod-tag">MÓDULO 4</div>
+      <svg class="chev" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="#7666A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="mod-detail">
+      <div style="padding-bottom:20px;">
+        <div class="sched-item"><div class="sched-time">16:05 – 16:30</div><div><div class="sched-title">Actividad física y rehabilitación en todas las fases del cáncer infantojuvenil</div><div class="sched-who">PhD-PT. Lynn Tanner — Directora Científica de Medicina Física y Rehabilitación, Children's Minnesota (EE.UU.) · online</div></div></div>
+        <div class="sched-item"><div class="sched-time">16:30 – 16:55</div><div><div class="sched-title">Preservar el futuro antes del tratamiento: onco-fertilidad en NNA con cáncer en Chile</div><div class="sched-who">Dra. Bernardita Troncoso — Cirujana, Urología Pediátrica, Hospital San Juan de Dios y Clínica MEDS</div></div></div>
+        <div class="sched-item"><div class="sched-time">16:55 – 17:20</div><div><div class="sched-title">Volver a la vida después de la cura: Unidades de Seguimiento a Largo Plazo y el tránsito del AYA</div><div class="sched-who">Mari Carmen Molero — Enfermera coordinadora SEGUIM, Hospital Sant Joan de Déu Barcelona</div></div></div>
+        <div class="sched-item"><div class="sched-time">17:20 – 17:45</div><div><div class="sched-title">Panel de cierre: "De la supervivencia a la vida plena: construyendo una agenda para los sobrevivientes de cáncer infantil en Chile"</div><div class="sched-who">Modera: Dra. Orietta Candia — Gerente Técnico, Fundación Nuestros Hijos</div></div></div>
+        <div class="sched-item"><div class="sched-time">17:45 – 18:00</div><div><div class="sched-title">Cierre, agradecimientos y foto grupal</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFERENCISTAS -->
+<section id="conferencistas" class="bg-lavender">
+  <div class="eyebrow">CONFERENCISTAS Y PANELISTAS</div>
+  <h2>Expositores confirmados</h2>
+  <div style="font-weight:800;font-size:13px;letter-spacing:.05em;color:#4A4056;margin-bottom:16px;">INTERNACIONALES</div>
+  <div class="logo-row">
+    <div><img alt="Dra. Liliana Vásquez" src="img/foto_Vasquez_Liliana.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dra. Liliana Vásquez</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Oficial Técnico, Iniciativa Global para el Cáncer Infantil · OPS/OMS</div><div class="code-pill" style="margin-left:0;margin-top:4px;">Online</div></div>
+    <div><div style="width:56px;height:56px;border-radius:50%;background:#E4E4E4;margin-bottom:6px;"></div><div style="font-size:12px;font-weight:800;">PhD-PT. Lynn Tanner</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Directora Científica de Medicina Física y Rehabilitación · Children's Minnesota, EE.UU.</div><div class="code-pill" style="margin-left:0;margin-top:4px;">Online</div></div>
+    <div><img alt="Mari Carmen Molero" src="img/foto_Molero_MariCarmen.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Mari Carmen Molero</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Enfermera coordinadora SEGUIM · Hospital Sant Joan de Déu Barcelona, España</div></div>
+  </div>
+  <div style="font-weight:800;font-size:13px;letter-spacing:.05em;color:#4A4056;margin-bottom:16px;">NACIONALES</div>
+  <div class="logo-row" style="flex-wrap:wrap;">
+    <div><img alt="Dra. Marcela Zubieta" src="img/foto_Zubieta_Marcela.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dra. Marcela Zubieta</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Presidenta y Fundadora, FNH</div></div>
+    <div><img alt="Dra. Orietta Candia" src="img/foto_Candia_Orietta.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dra. Orietta Candia</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Gerente Técnico, FNH</div><div class="code-pill" style="margin-left:0;margin-top:4px;">Moderadora</div></div>
+    <div><img alt="Dra. Julia Palma" src="img/foto_Palma_Julia.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dra. Julia Palma</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">St. Jude Children's Research Hospital</div></div>
+    <div><div style="width:56px;height:56px;border-radius:50%;background:#E4E4E4;margin-bottom:6px;"></div><div style="font-size:12px;font-weight:800;">Dra. Milena Villarroel</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Presidenta SLAOP · Académica U. de Chile</div></div>
+    <div><img alt="Dr. Felipe Espinoza" src="img/foto_Espinoza_Felipe.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dr. Felipe Espinoza</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Coordinador Nacional PINDA · Hosp. San Borja Arriarán</div></div>
+    <div><img alt="Mg. Abog. Manuel Pérez" src="img/foto_Perez_Manuel.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Mg. Abog. Manuel Pérez</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Socio fundador, Portia Abogados</div></div>
+    <div><div style="width:56px;height:56px;border-radius:50%;background:#E4E4E4;margin-bottom:6px;"></div><div style="font-size:12px;font-weight:800;">Fgo-MsP. Pablo Vásquez</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Jefe de Salud Integral, FNH</div></div>
+    <div><img alt="Lic-Mg. Ivonne Vargas" src="img/foto_Vargas_Ivonne.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Lic-Mg. Ivonne Vargas</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Académica, Centro de Bioética UC</div></div>
+    <div><img alt="Dra. Bernardita Troncoso" src="img/foto_Troncoso_Bernardita.jpg" style="width:56px;height:56px;border-radius:50%;object-fit:cover;margin-bottom:6px;"><div style="font-size:12px;font-weight:800;">Dra. Bernardita Troncoso</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Urología Pediátrica, Hosp. San Juan de Dios</div></div>
+    <div><div style="width:56px;height:56px;border-radius:50%;background:#E4E4E4;margin-bottom:6px;"></div><div style="font-size:12px;font-weight:800;">Dra. Claudia Paris</div><div style="font-size:11px;color:#8A7FA0;max-width:160px;">Coordinadora Nacional, Grupo PINDA Seguimiento</div><div class="code-pill" style="margin-left:0;margin-top:4px;">Panelista</div></div>
+  </div>
+</section>
+
+<!-- VALORES -->
+<section id="valores">
+  <div class="eyebrow">VALORES</div>
+  <h2 style="margin-bottom:24px;">Entradas</h2>
+  <div style="background:var(--purple-deep);color:#fff;border-radius:14px;padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:24px;">
+    <div id="v-band" style="font-weight:800;font-size:14px;">Preventa vigente hasta el domingo 18 de octubre, 23:59</div>
+    <div id="v-next" style="background:var(--amber);color:#2B2110;font-weight:800;font-size:12px;padding:6px 16px;border-radius:20px;">Tarifa regular desde el lunes 19 de octubre</div>
+  </div>
+  <div class="valores-table">
+      <div class="v-head"><div>CATEGORÍA</div><div data-tramo="pre">PREVENTA<br><small style="font-weight:600;">hasta 18 oct</small></div><div data-tramo="reg">REGULAR<br><small style="font-weight:600;">19 oct – 22 nov</small></div><div data-tramo="ult">ÚLTIMA HORA<br><small style="font-weight:600;">desde 23 nov</small></div></div>
+      <div class="v-row"><div class="v-cat"><b>General / Médico</b><span>Tarifa plena</span></div><div class="v-p" data-tramo="pre">$46.000 <small>presencial</small><br>$24.000 <small>online</small></div><div class="v-p" data-tramo="reg">$58.000 <small>presencial</small><br>$30.000 <small>online</small></div><div class="v-p" data-tramo="ult">$67.000 <small>presencial</small><br>$34.000 <small>online</small></div></div>
+      <div class="v-row alt"><div class="v-cat"><b>Otros profesionales de la salud</b><span>Enfermería, kinesiología, terapia ocupacional, fonoaudiología, etc.</span></div><div class="v-p" data-tramo="pre">$34.000 <small>presencial</small><br>$18.000 <small>online</small></div><div class="v-p" data-tramo="reg">$42.000 <small>presencial</small><br>$22.000 <small>online</small></div><div class="v-p" data-tramo="ult">$48.000 <small>presencial</small><br>$25.000 <small>online</small></div></div>
+      <div class="v-row"><div class="v-cat"><b>Estudiante de pregrado</b><span>Presencial · 15 cupos de beca</span></div><div class="v-p" data-tramo="pre">$25.000 <small>presencial</small><br>$8.000 <small>online</small></div><div class="v-p" data-tramo="reg">$25.000 <small>presencial</small><br>$10.000 <small>online</small></div><div class="v-p" data-tramo="ult">$29.000 <small>presencial</small><br>$12.000 <small>online</small></div></div>
+    </div>
+    <div style="font-size:12px;color:#8A7FA0;margin-top:14px;">Valores con IVA incluido. Al momento de la compra, Eventrid agrega un cargo por servicio de 8,01% (6,73% + IVA). La venta presencial de última hora cierra el domingo 29 de noviembre a las 23:59 y la online el lunes 30 de noviembre a las 08:00 (hora de Chile).</div>
+  <div style="border:1.5px solid var(--purple-deep);background:var(--lavender);border-radius:14px;padding:18px 22px;margin-top:20px;font-size:14px;line-height:1.6;color:var(--purple-deep);">
+    <b>¿Tienes un código de descuento?</b> Si eres docente o investigador/a de una universidad, socio de alguna de nuestras organizaciones patrocinantes, parte de CCI LATAM, o residente, becado/a de hemato-oncología, fisiatría o staff del PINDA, escribe a <span style="font-weight:800;">amunoz@fnh.cl</span> y te contamos cómo canjear tu código de descuento.
+  </div>
+  <div style="font-size:12px;color:#8A7FA0;margin-top:10px;">Para canjear los 15 cupos de beca de estudiante de pregrado, contáctese al mismo correo.</div>
+  <div style="margin-top:32px;"><a data-enlace="compra-entrada" href="#" class="btn-pop">Compra tu entrada</a></div>
+</section>
+
+<!-- INFORMACIÓN PRÁCTICA -->
+<section id="info-practica">
+  <div class="eyebrow">INFORMACIÓN PRÁCTICA</div>
+  <h2>Cómo llegar y qué considerar el día del evento</h2>
+  <div class="sede-grid" style="margin-bottom:40px;">
+    <div>
+      <div style="font-weight:900;font-size:20px;margin-bottom:8px;">Auditorio COPEC</div>
+      <p style="font-size:16px;line-height:1.7;color:#4A4056;margin:0 0 14px;">Isidora Goyenechea 2915, Las Condes, Región Metropolitana.</p>
+      <div style="font-size:13px;font-weight:700;color:var(--purple);margin-bottom:6px;">La acreditación abre a las 08:00 hrs. Se recomienda llegar antes de las 09:00 hrs: es el horario de acceso más solicitado del edificio, y una llegada posterior puede implicar una espera de hasta media hora. Se solicitará la entrada en la acreditación.</div>
+      <div style="font-size:13px;color:#4A4056;margin-bottom:6px;"><a data-enlace="como-llegar" href="https://maps.app.goo.gl/Gh76aB4PxEsvn5xt8" target="_blank" class="btn-underline">Ver instrucciones de cómo llegar al auditorio (Google Maps) →</a></div>
+      <div style="font-size:13px;color:#4A4056;margin-bottom:6px;"><a data-enlace="estacionamientos" href="https://maps.app.goo.gl/fBUqxxLxGAXQgTkH9" target="_blank" class="btn-underline">Ver estacionamientos cercanos (Google Maps) →</a></div>
+      <div style="font-size:12px;color:#8A7FA0;">La Jornada no incluye estacionamiento. Los indicados arriba son pagados y muy cercanos al lugar del evento.</div>
+    </div>
+    <div>
+      <a data-enlace="como-llegar" href="https://maps.app.goo.gl/Gh76aB4PxEsvn5xt8" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:10px;height:200px;border-radius:16px;background:var(--lavender);color:var(--purple-deep);text-decoration:none;">
+        <svg width="26" height="26" viewBox="0 0 18 18" fill="none"><path d="M9 16s6-5.2 6-9.5A6 6 0 003 6.5C3 10.8 9 16 9 16z" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="6.5" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span style="font-weight:800;font-size:14px;">Abrir mapa en Google Maps →</span>
+      </a>
+      <div style="margin-top:10px;display:flex;flex-direction:column;gap:6px;">
+        <a data-enlace="transporte-publico" href="https://www.google.com/maps/dir/?api=1&destination=Isidora+Goyenechea+2915,+Las+Condes,+Santiago,+Chile&travelmode=transit" target="_blank" class="btn-underline">Cómo llegar en transporte público (Google Maps) →</a>
+        <a data-enlace="red-movilidad" href="https://www.red.cl/planifica-tu-viaje/" target="_blank" class="btn-underline">Planificador de Red Movilidad Santiago →</a>
+      </div>
+    </div>
+  </div>
+  <div class="sumarse-card" style="background:var(--lavender);">
+    <div style="font-weight:900;font-size:16px;margin-bottom:10px;">Modalidades</div>
+    <div style="font-size:14px;color:#4A4056;line-height:1.7;">El evento está disponible en modalidad presencial y online. Para la modalidad online, al correo con el que te inscribiste recibirás directamente el enlace de conexión. Si no lo has recibido 48 horas antes del evento, escribe a <span style="font-weight:700;">amunoz@fnh.cl</span>.</div>
+  </div>
+</section>
+
+<!-- VISITA SANTIAGO -->
+<section id="turismo" class="visita">
+  <div class="eyebrow" style="color:#CBBEE0;">PARA VISITANTES</div>
+  <h2>Visita Santiago de Chile</h2>
+  <p style="max-width:760px;font-size:16px;line-height:1.7;color:#E7DFF3;margin:0;">La vibrante capital de Chile combina tradición y modernidad, al pie de los Andes. Aquí reunimos alojamiento, actividades y guías útiles para quienes viajan a la 4ª Jornada.</p>
+  <div class="visita-grid">
+    <div class="visita-card"><div style="font-weight:800;font-size:15px;margin-bottom:10px;">Dónde alojar</div><div style="font-size:13px;line-height:1.6;color:#E7DFF3;margin-bottom:14px;">Hoteles cercanos al lugar del encuentro. Míralos en este link de Google Maps.</div><a data-enlace="hoteles" href="https://www.google.com/maps/search/hoteles+cerca+de+Isidora+Goyenechea+2915+Las+Condes" target="_blank" class="btn-underline" style="color:var(--amber);">Ver hoteles cercanos →</a></div>
+    <div class="visita-card"><div style="font-weight:800;font-size:15px;margin-bottom:10px;">Qué hacer</div><div style="font-size:13px;line-height:1.6;color:#E7DFF3;margin-bottom:14px;">Paseos, gastronomía y valles cercanos.</div><a data-enlace="que-hacer" href="https://disfrutasantiago.cl" target="_blank" class="btn-underline" style="color:var(--amber);">Disfruta Santiago — guía oficial SERNATUR →</a></div>
+    <div class="visita-card"><div style="font-weight:800;font-size:15px;margin-bottom:10px;">Guía para visitantes internacionales</div><a data-enlace="guia-visitantes" href="https://drive.google.com/file/d/1IZmyprX7W1kH5TmX1mEiJXTlEIKGUDNN/view?usp=sharing" target="_blank" class="btn-underline" style="color:var(--amber);">Ver guía →</a></div>
+  </div>
+</section>
+
+<!-- RESULTADOS -->
+<section id="resultados">
+  <div class="eyebrow">RESULTADOS</div>
+  <h2>Cifras edición 2025</h2>
+  <div class="res-grid" style="grid-template-columns:1fr;max-width:340px;">
+    <div class="res-big">
+      <div class="num">80</div>
+      <div class="lab">NPS promedio</div>
+    </div>
+  </div>
+  <div style="font-weight:800;font-size:13px;letter-spacing:.05em;color:#4A4056;margin:32px 0 16px;">COMPOSICIÓN DE AUDIENCIA · 2025</div>
+  <div class="res-series">
+    <div class="res-series-item"><b>40,7%</b><span>Profesional de la salud</span></div>
+    <div class="res-series-item"><b>31,5%</b><span>Influyente</span></div>
+    <div class="res-series-item"><b>12%</b><span>Tomador de decisión</span></div>
+    <div class="res-series-item"><b>10,2%</b><span>Profesional</span></div>
+    <div class="res-series-item"><b>5,6%</b><span>Academia</span></div>
+  </div>
+</section>
+
+<!-- PATROCINIOS -->
+<section id="patrocinios" class="bg-lavender">
+  <div class="eyebrow" style="margin-bottom:28px;">PATROCINIOS</div>
+  <div class="patro-grid">
+    <div class="patro-box"><img src="img/patrocinio_Colegio_Terapeutas_Ocupacionales.png" alt="Colegio de Terapeutas Ocupacionales de Chile"></div>
+    <div class="patro-box"><img src="img/patrocinio_FUECH.png" alt="FUECH"></div>
+    <div class="patro-box"><img src="img/patrocinio_IMPACT.png" alt="IMPACT"></div>
+    <div class="patro-box"><img src="img/patrocinio_SEOC.png" alt="Sociedad Chilena de Enfermería Oncológica"></div>
+    <div class="patro-box"><img src="img/patrocinio_SOCHIMFYR.png" alt="Sociedad Chilena de Medicina Física y Rehabilitación"></div>
+    <div class="patro-box"><img src="img/patrocinio_SOCHIPE.png" alt="Sociedad Chilena de Pediatría"></div>
+  </div>
+</section>
+
+<!-- AUSPICIOS -->
+<section id="auspicios">
+  <div class="eyebrow" style="margin-bottom:28px;">AUSPICIOS</div>
+
+  <div class="tier">
+    <div class="tier-label">Colaboran</div>
+    <div class="tier-grid" style="grid-template-columns:repeat(5,1fr);max-width:900px;">
+      <div style="height:64px;display:flex;align-items:center;justify-content:center;"><img src="img/colabora_COPEC.png" alt="COPEC" style="max-height:100%;max-width:100%;object-fit:contain;"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SUMARSE -->
+<section id="sumarse" class="bg-lavender">
+  <div class="eyebrow">SUMARSE A LA JORNADA</div>
+  <h2>Dos formas de aportar</h2>
+  <div class="sumarse-grid">
+    <div class="sumarse-card" style="background:var(--purple-deep);color:#fff;">
+      <div style="font-weight:900;font-size:18px;margin-bottom:10px;">Quiero auspiciar</div>
+      <div style="font-size:14px;line-height:1.6;color:#E7DFF3;margin-bottom:20px;">Empresas e instituciones interesadas en financiar la Jornada 2026.</div>
+      <a data-enlace="auspiciar" href="mailto:amunoz@fnh.cl?subject=Interés%20en%20auspiciar%20la%204ª%20Jornada%202026" class="btn-pop">Escríbenos para auspiciar</a>
+      <div style="font-size:13px;color:#E7DFF3;margin-top:14px;">O escríbenos directamente a <span style="font-weight:800;color:#fff;">amunoz@fnh.cl</span></div>
+    </div>
+    <div class="sumarse-card" style="background:#fff;border:2px solid var(--amber);">
+      <div style="font-weight:900;font-size:18px;margin-bottom:10px;">Quiero donar</div>
+      <div style="font-size:14px;line-height:1.6;color:#4A4056;margin-bottom:20px;">Para quien quiere colaborar con la Fundación, asista o no a la Jornada.</div>
+      <a data-enlace="donar" href="#" class="btn-pop" style="background:var(--purple-deep);color:#fff;">Donar a FNH →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img src="img/franja_iconos_footer.png" alt="Íconos por sistema/tipo de cáncer" style="width:100%;height:44px;object-fit:cover;border-radius:8px;margin-bottom:32px;">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px;">
+    <div>
+      <img src="img/logo_FNH_blanco_footer.png" alt="Fundación Nuestros Hijos" style="height:56px;margin-bottom:14px;">
+      <a data-enlace="donar" href="#" class="btn-underline" style="color:var(--amber);">Donar a la Fundación →</a>
+    </div>
+    <div style="font-size:13px;color:#B8ADCB;line-height:1.8;">
+      Programa · Expositores · Comité · Valores<br>Información práctica · Resultados<br>Patrocinios · Auspicios · Sumarte
+    </div>
+    <div style="font-size:12px;color:#8A7FA0;line-height:1.9;">
+      <a data-enlace="politica-datos" href="#" class="btn-underline" style="color:#8A7FA0;">Política de datos personales</a><br>
+      amunoz@fnh.cl<br>
+      © 2026 Fundación Nuestros Hijos
+    </div>
+  </div>
+</footer>
+
+<a href="#valores" class="btn-pop float-cta">Compra tu entrada
+  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 7h8M8 3l4 4-4 4" stroke="#2B2110" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+<script src="js/enlaces.js"></script>
+<script src="js/app.js"></script>
+
+
+</body>
+</html>
