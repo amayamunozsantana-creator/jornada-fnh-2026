@@ -138,4 +138,23 @@ function tick(){
     }
   });
 })();
+// Fotos pendientes: si el archivo indicado en src aún no existe, se muestra el recuadro gris
+document.querySelectorAll('img[data-foto]').forEach(img => {
+  const pendiente = () => {
+    const ph = document.createElement('div');
+    ph.className = img.className + ' foto-pendiente';
+    ph.style.cssText = img.style.cssText;
+    ph.setAttribute('role', 'img');
+    ph.setAttribute('aria-label', img.alt + ' (foto pendiente)');
+    img.replaceWith(ph);
+  };
+  if (img.complete && img.naturalWidth === 0) pendiente();
+  else img.addEventListener('error', pendiente);
+});
+
+// Galería: si no tiene fotos, se oculta también su enlace en el menú
+if (!document.querySelector('#galeria .gal-tile img')) {
+  document.querySelectorAll('a[href="#galeria"]').forEach(a => { a.hidden = true; });
+}
+
 tick(); setInterval(tick, 30000);

@@ -1,5 +1,8 @@
 /* Estilos del sitio 4ª Jornada de Cáncer Infantojuvenil — FNH.
    Colores de marca: variables en :root (primeras líneas). */
+/* Tipografía Montserrat alojada en el propio sitio (fonts/, licencia OFL): no depende de Google Fonts */
+@font-face{font-family:'Montserrat';src:url('../fonts/Montserrat.ttf') format('truetype');font-weight:100 900;font-style:normal;font-display:swap;}
+@font-face{font-family:'Montserrat';src:url('../fonts/Montserrat-Italic.ttf') format('truetype');font-weight:100 900;font-style:italic;font-display:swap;}
 :root{
   --purple-deep:#5B3E82;
   --purple:#7666A3;
@@ -197,3 +200,20 @@ footer{padding:56px 5vw;background:var(--ink2);color:#fff;}
   .patro-grid{grid-template-columns:repeat(2,1fr);}
   .res-series{grid-template-columns:repeat(2,1fr);}
 }
+
+/* FOTOS PENDIENTES: recuadro gris mientras el archivo de la foto no exista (ver js/app.js) */
+.foto-pendiente{background:#E4E4E4;}
+.comite-photo.foto-pendiente{background:#E7E1F1;}
+
+/* AUSPICIOS: tamaño de logo por nivel; un nivel sin logos no se muestra */
+.tier-logos{display:flex;flex-wrap:wrap;gap:28px;align-items:center;}
+.tier-logos img{width:auto;max-width:100%;object-fit:contain;height:56px;}
+.tier[data-nivel="diamante"] .tier-logos img{height:120px;}
+.tier[data-nivel="oro"] .tier-logos img{height:96px;}
+.tier[data-nivel="plata"] .tier-logos img{height:76px;}
+.tier[data-nivel="bronce"] .tier-logos img{height:60px;}
+.tier:not(:has(img)){display:none;}
+
+/* GALERÍA: se oculta mientras no tenga fotos */
+#galeria:not(:has(.gal-tile img)){display:none;}
+.gal-year:not(:has(.gal-tile img)){display:none;}

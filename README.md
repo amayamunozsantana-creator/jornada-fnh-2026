@@ -5,7 +5,9 @@ Sitio web del evento del lunes 30 de noviembre de 2026 (Auditorio COPEC, Santiag
 - **Sitio funcionando:** ver el enlace en *About*, a la derecha de esta página (GitHub Pages).
 - **Código:** este repositorio. Botón verde **Code → Download ZIP** para descargarlo completo.
 
-Es un sitio **estático**: HTML, CSS y JavaScript, sin base de datos, sin gestor de contenidos y sin dependencias que instalar. Para publicarlo en el servidor de FNH basta con copiar la carpeta completa tal como está.
+Es un sitio **estático**: HTML, CSS y JavaScript, sin base de datos, sin gestor de contenidos y sin dependencias que instalar. **No carga nada desde servidores externos**: la tipografía, las imágenes y los scripts están incluidos. Todas las rutas son relativas, así que funciona igual en una subcarpeta (`fnh.cl/jornada2026/`) o en un subdominio (`jornada.fnh.cl`). Para publicarlo basta con copiar la carpeta completa tal como está.
+
+**Para actualizar contenidos** (Eventrid, fotos, auspiciadores, patrocinios, galería), ver [`COMO_ACTUALIZAR.md`](COMO_ACTUALIZAR.md): cada cambio es guardar un archivo en `img/` o agregar una línea.
 
 ## Estructura
 
@@ -16,9 +18,11 @@ Es un sitio **estático**: HTML, CSS y JavaScript, sin base de datos, sin gestor
 | `js/enlaces.js` | **Único lugar donde se editan los destinos de botones y enlaces** |
 | `js/app.js` | Comportamiento: cursor, parallax, menú lateral, acordeón del programa, selector de huso horario, cuenta regresiva por tramos |
 | `img/` | Logos, fotos (blanco y negro), patrocinios, textura del hero, franja del pie, cursor |
+| `fonts/` | Tipografía Montserrat (licencia OFL), alojada en el propio sitio |
+| `COMO_ACTUALIZAR.md` | Instrucciones paso a paso para cada tipo de cambio de contenido |
 | `design-tokens.json` | Paleta, tipografía, espaciados y tiempos de animación; importable en Figma |
 
-Tipografía: Montserrat, cargada desde Google Fonts (licencia OFL).
+Tipografía: Montserrat, incluida en `fonts/` (licencia OFL).
 
 ## Enlaces pendientes
 
@@ -32,9 +36,9 @@ Todos los botones llevan un atributo `data-enlace` y toman su destino de `js/enl
 ## Contenidos pendientes
 
 - Expositores por confirmar: Módulo 1 (10:00) y ponencia CAR-T del Módulo 2 (12:05).
-- Fotos de Dra. Milena Villarroel, PhD-PT. Lynn Tanner, Fgo-MsP. Pablo Vásquez, Dra. Claudia Paris y EU. Amaya Muñoz (hoy se muestra un círculo gris).
-- Logos de auspiciadores: los niveles Diamante, Oro, Plata y Bronce se agregan en la sección `#auspicios` de `index.html` cuando haya acuerdo firmado (alto de logo: 120, 96, 76 y 60 px).
-- Galería de ediciones anteriores (2023, 2024, 2025): no se publica hasta tener fotos con consentimiento de uso de imagen.
+- Fotos de Dra. Milena Villarroel, PhD-PT. Lynn Tanner, Fgo-MsP. Pablo Vásquez, Dra. Claudia Paris y EU. Amaya Muñoz. Hoy se muestra un recuadro gris; la foto aparece sola al guardarla en `img/` con el nombre indicado en `COMO_ACTUALIZAR.md`.
+- Logos de auspiciadores: cada nivel (Diamante, Oro, Plata, Bronce, Cooperador) ya está en `index.html` y aparece solo al recibir su primer logo, con el tamaño que le corresponde.
+- Galería de ediciones anteriores (2023, 2024, 2025): ya está en `index.html`, oculta junto con su enlace en el menú; aparece sola con la primera foto. Solo fotos con consentimiento de uso de imagen.
 
 ## Comportamientos que no deben perderse
 
