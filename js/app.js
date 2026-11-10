@@ -90,21 +90,12 @@ renderTz(tzSelect.value);
 tzSelect.addEventListener('change', () => renderTz(tzSelect.value));
 
 
-// Tramos en hora de Chile (UTC-3 en oct-nov 2026)
+// Cuenta regresiva hasta el inicio de la Jornada (hora de Chile, UTC-3 en nov 2026)
 const phases = [
-  { key:'pre', end:new Date('2026-10-18T23:59:00-03:00'), ghost:'18', title:'LA PREVENTA CIERRA EL DOMINGO 18 DE OCTUBRE, 23:59 (HORA DE CHILE)', note:'Desde el lunes 19 de octubre rige la <strong style="color:#fff;">tarifa regular</strong>.', band:'Preventa vigente hasta el domingo 18 de octubre, 23:59', next:'Tarifa regular desde el lunes 19 de octubre' },
-  { key:'reg', end:new Date('2026-11-22T23:59:00-03:00'), ghost:'22', title:'LA TARIFA REGULAR RIGE HASTA EL DOMINGO 22 DE NOVIEMBRE, 23:59 (HORA DE CHILE)', note:'Desde el lunes 23 de noviembre rige la <strong style="color:#fff;">tarifa de última hora</strong>.', band:'Tarifa regular vigente hasta el domingo 22 de noviembre, 23:59', next:'Última hora desde el lunes 23 de noviembre' },
-  { key:'ult', end:new Date('2026-11-30T08:30:00-03:00'), ghost:'30', title:'LA JORNADA COMIENZA EL LUNES 30 DE NOVIEMBRE, 08:30 (HORA DE CHILE)', note:'Venta presencial hasta el domingo 29 de noviembre, 23:59; online hasta el lunes 30, 08:00.', band:'Tarifa de última hora vigente', next:'Presencial hasta el 29 de noviembre · online hasta el 30, 08:00' }
+  { key:'evento', end:new Date('2026-11-30T08:30:00-03:00') }
 ];
-function currentPhase(now){ return phases.find(p => now < p.end) || phases[phases.length-1]; }
-function applyPhase(p){
-  document.getElementById('cd-ghost').textContent = p.ghost;
-  document.getElementById('cd-title').textContent = p.title;
-  document.getElementById('cd-note').innerHTML = p.note;
-  document.getElementById('v-band').textContent = p.band;
-  document.getElementById('v-next').textContent = p.next;
-  document.querySelectorAll('[data-tramo]').forEach(el => el.classList.toggle('now', el.dataset.tramo === p.key));
-}
+function currentPhase(now){ return phases[0]; }
+function applyPhase(p){}
 let shownPhase = null;
 function tick(){
   const now = new Date();

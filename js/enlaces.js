@@ -3,7 +3,7 @@
    Ver punto 6 de la guía de contenidos.
    Ejemplo: "compra-entrada": "https://www.eventrid.cl/...", */
 window.ENLACES = {
-  "compra-entrada": null,
+  "compra-entrada": "https://eventr.id/0023CZfP",
   "como-llegar": "https://maps.app.goo.gl/Gh76aB4PxEsvn5xt8",
   "estacionamientos": "https://maps.app.goo.gl/fBUqxxLxGAXQgTkH9",
   "transporte-publico": "https://www.google.com/maps/dir/?api=1&destination=Isidora+Goyenechea+2915,+Las+Condes,+Santiago,+Chile&travelmode=transit",
