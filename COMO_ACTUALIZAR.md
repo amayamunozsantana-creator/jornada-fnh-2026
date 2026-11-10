@@ -22,17 +22,15 @@ Solo hay que guardar la foto en la carpeta `img/` **con este nombre exacto**. No
 
 | Persona | Nombre del archivo |
 |---|---|
-| Dra. Milena Villarroel | `img/foto_Villarroel_Milena.jpg` |
 | EU. Amaya Muñoz | `img/foto_Munoz_Amaya.jpg` |
 | PhD-PT. Lynn Tanner | `img/foto_Tanner_Lynn.jpg` |
-| Fgo-MsP. Pablo Vásquez | `img/foto_Vasquez_Pablo.jpg` |
 | Dra. Claudia Paris | `img/foto_Paris_Claudia.jpg` |
 
 La foto debe ser cuadrada y centrada en el rostro. Aparece sola en el Comité y en Conferencistas; mientras no exista el archivo, se muestra el recuadro gris.
 
-## 3. Expositor por confirmar (Módulo 1, 10:00 y Módulo 2, 12:05)
+## 3. Expositor por confirmar o nuevo
 
-Archivo: `index.html`. Buscar el comentario `PENDIENTE` y reemplazar la línea
+Archivo: `index.html`. En la sesión del programa, buscar la charla y reemplazar la línea
 
 ```html
 <div class="sched-who sched-pending">Expositor — por confirmar</div>
@@ -46,20 +44,7 @@ por
 
 Para que la persona aparezca también en «Conferencistas y panelistas», se copia el bloque de otra persona en esa sección y se cambian la foto, el nombre y el cargo.
 
-## 4. Nuevo auspiciador
-
-Solo auspiciadores con acuerdo firmado.
-
-1. Guardar el logo en `img/`, por ejemplo `img/auspicio_NombreEmpresa.png`.
-2. En `index.html`, sección AUSPICIOS, buscar el comentario de su nivel (por ejemplo `<!-- logos Oro aquí -->`) y agregar debajo:
-
-```html
-<img src="img/auspicio_NombreEmpresa.png" alt="Nombre de la empresa">
-```
-
-El nivel aparece solo al tener su primer logo, y el tamaño lo pone el nivel: Diamante 120 px de alto, Oro 96, Plata 76, Bronce 60, Cooperador y Colaboran 56.
-
-## 5. Nuevo patrocinio
+## 4. Nuevo patrocinio
 
 1. Guardar el logo en `img/`, por ejemplo `img/patrocinio_NombreInstitucion.png`.
 2. En `index.html`, sección PATROCINIOS, copiar una línea existente y cambiar el archivo y el nombre:
@@ -70,7 +55,7 @@ El nivel aparece solo al tener su primer logo, y el tamaño lo pone el nivel: Di
 
 Todos los patrocinios se muestran del mismo tamaño, sin jerarquía.
 
-## 6. Fotos de ediciones anteriores (galería)
+## 5. Fotos de ediciones anteriores (galería)
 
 Solo fotos con consentimiento de uso de imagen.
 
@@ -83,7 +68,7 @@ Solo fotos con consentimiento de uso de imagen.
 
 Lo ideal son 4 fotos por año. La sección y su enlace en el menú aparecen solos con la primera foto; se muestran en blanco y negro y pasan a color al pasar el cursor.
 
-## 7. Cuando el sitio pase a ser el oficial
+## 6. Cuando el sitio pase a ser el oficial
 
 En `index.html`, borrar la línea:
 
