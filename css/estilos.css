@@ -115,8 +115,8 @@ h2{font-weight:900;font-size:clamp(26px,3.4vw,34px);margin:0 0 20px;}
 
 /* VALORES */
 .valores-table{border:1px solid #EEEAF4;border-radius:16px;overflow:hidden;}
-.v-head{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;background:var(--lavender);padding:14px 24px;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--purple);}
-.v-row{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;padding:16px 24px;border-top:1px solid #F1EEF7;align-items:center;}
+.v-head{display:grid;grid-template-columns:2.2fr 1fr 1fr;background:var(--lavender);padding:14px 24px;font-size:12px;font-weight:800;letter-spacing:.04em;color:var(--purple);}
+.v-row{display:grid;grid-template-columns:2.2fr 1fr 1fr;padding:16px 24px;border-top:1px solid #F1EEF7;align-items:center;}
 .v-row.alt{background:var(--lavender);}
 .v-cat b{display:block;font-weight:800;font-size:14px;}
 .v-cat span{font-size:12px;color:#8A7FA0;}
@@ -125,10 +125,11 @@ h2{font-weight:900;font-size:clamp(26px,3.4vw,34px);margin:0 0 20px;}
 .v-p small{font-weight:600;font-size:11px;color:#A79DB8;}
 .v-p.now{font-weight:900;font-size:17px;color:var(--ink);}
 .v-head .now{color:var(--purple-deep);}
-@media (max-width:640px){ .v-head,.v-row{grid-template-columns:1.4fr 1fr 1fr 1fr;padding:12px 12px;gap:6px;} .v-p{font-size:13px;} .v-p.now{font-size:14px;} }
+@media (max-width:640px){ .v-head,.v-row{grid-template-columns:1.4fr 1fr 1fr;padding:12px 12px;gap:6px;} .v-p{font-size:13px;} .v-p.now{font-size:14px;} }
 .code-pill{display:inline-block;background:#fff;color:var(--purple-deep);font-size:10px;font-weight:800;letter-spacing:.03em;padding:2px 8px;border-radius:10px;border:1.5px solid var(--purple-deep);margin-left:6px;vertical-align:middle;}
 
-.logo-row{display:flex;gap:30px;flex-wrap:wrap;align-items:center;margin-bottom:40px;}
+.logo-row{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;margin-bottom:40px;}
+.logo-row > div{width:170px;}
 
 /* SEDE */
 .sede-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
@@ -183,7 +184,7 @@ footer{padding:56px 5vw;background:var(--ink2);color:#fff;}
 /* PATROCINIOS / AUSPICIOS */
 .patro-box{height:64px;display:flex;align-items:center;justify-content:center;}
 .patro-box img{max-height:100%;max-width:100%;object-fit:contain;}
-.patro-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:24px;align-items:center;}
+.patro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:24px;align-items:center;}
 .tier{margin-bottom:36px;}
 .tier-label{font-weight:800;font-size:13px;letter-spacing:.06em;color:var(--purple);margin-bottom:14px;text-transform:uppercase;}
 .tier-grid{display:grid;gap:20px;align-items:center;}
@@ -217,3 +218,4 @@ footer{padding:56px 5vw;background:var(--ink2);color:#fff;}
 /* GALERÍA: se oculta mientras no tenga fotos */
 #galeria:not(:has(.gal-tile img)){display:none;}
 .gal-year:not(:has(.gal-tile img)){display:none;}
+#colaboran .tier-logos img{height:80px;}
